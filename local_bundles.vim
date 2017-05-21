@@ -5,6 +5,7 @@ Plug 'vim-scripts/indentpython.vim'
 Plug 'frankier/neovim-colors-solarized-truecolor-only'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'zchee/deoplete-jedi'
+Plug 'zchee/deoplete-zsh'
 Plug 'tpope/vim-surround'
 Plug 'ervandew/supertab' " tab for auto complete
 Plug 'tpope/vim-repeat' " dot repeat for plugin actions

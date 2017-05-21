@@ -2,6 +2,9 @@
 " Set settings here and not init.vim
 " ================================== Give them here
 
+" Font and size
+set gfn=Monospace\ 11
+
 " For true color solarized
 " ++++++++++++++++++++++++
 set termguicolors
@@ -26,11 +29,14 @@ endif
 " " To close preview window on insert
 autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 
+" snippets from ultisnips
+call deoplete#custom#set('ultisnips', 'matchers', ['matcher_fuzzy'])
+
 " omnifuncs "dunno what that is
-augroup omnifuncs
-  autocmd!
-  autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
-augroup end
+"augroup omnifuncs
+"  autocmd!
+"  autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+"augroup end
 
 " Paste toggle for indent or non-indent auto while pasting
 " ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -58,3 +64,13 @@ noremap <leader>zc :Commands<Enter>
 noremap <leader>zl :Locate<Space>
 noremap <leader>zt :Tags<Space>
 " ++++++++++++++++ End bindings
+
+" Map bindings for terminal buffer
+tnoremap <C-x> <C-\><C-n>
+
+" Ultisnips keybindings
+" +++++++++++++++++++++
+let g:UltiSnipsExpandTrigger="<C-Space>"
+" let g:UltiSnipsJumpForwardTrigger="<Tab>"
+" let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
+let g:UltiSnipsEditSplit="vertical"
