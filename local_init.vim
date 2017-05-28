@@ -3,13 +3,13 @@
 " ================================== Give them here
 
 " Font and size
-set gfn=Monospace\ 11
+set gfn=Inconsolata\ 11
 
 " For true color solarized
 " ++++++++++++++++++++++++
 set termguicolors
 set background=dark " or light
-colorscheme solarized
+" colorscheme solarized
 
 " To toggle background
 map <F6> :let &background = ( &background == "dark"? "light" : "dark" )<Enter>
@@ -54,7 +54,6 @@ set relativenumber
 " ++++++++++++++
 " to execute fzf for normal
 noremap <leader>zz :FZF<Space>
-noremap <leader>zf :Files<Enter>
 noremap <leader>zb :Buffers<Enter>
 noremap <leader>zw :Windows<Enter>
 noremap <leader>zh :History
@@ -74,3 +73,6 @@ let g:UltiSnipsExpandTrigger="<C-Space>"
 " let g:UltiSnipsJumpForwardTrigger="<Tab>"
 " let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
 let g:UltiSnipsEditSplit="vertical"
+
+" Syntastic checker for racket
+let g:syntastic_racket_code_ayatollah_script = "~/.config/nvim/code-ayatollah.rkt"
