@@ -2,6 +2,9 @@
 " Set settings here and not init.vim
 " ================================== Give them here
 
+" Set vertical column 80
+set colorcolumn=79
+
 " Font and size
 set gfn=Inconsolata\ 11
 
@@ -54,7 +57,6 @@ set relativenumber
 " ++++++++++++++
 " to execute fzf for normal
 noremap <leader>zz :FZF<Space>
-noremap <leader>zb :Buffers<Enter>
 noremap <leader>zw :Windows<Enter>
 noremap <leader>zh :History
 noremap <leader>zo :Colors<Enter>
