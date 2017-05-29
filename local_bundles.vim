@@ -6,7 +6,9 @@ Plug 'frankier/neovim-colors-solarized-truecolor-only'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'zchee/deoplete-jedi'
 Plug 'zchee/deoplete-zsh'
-" Plug 'Rip-Rip/clang_complete'
+"Plug 'zchee/deoplete-clang'
+Plug 'Shougo/neoinclude.vim'
+" Plug 'Rip-Rip/clang_complete' " Broken as f
 Plug 'tpope/vim-surround'
 Plug 'ervandew/supertab' " tab for auto complete
 Plug 'tpope/vim-repeat' " dot repeat for plugin actions
