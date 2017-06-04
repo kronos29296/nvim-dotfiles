@@ -16,3 +16,8 @@ Plug 'tpope/vim-repeat' " dot repeat for plugin actions
 Plug 'wlangstroth/vim-racket'
 " Plugin for hy lisp (dialect for python)
 Plug 'hylang/vim-hy'
+Plug 'w0ng/vim-hybrid' " Dark theme for vim
+Plug 'chriskempson/base16-vim' " Set of base 16 themes for vim
+Plug 'vim-pandoc/vim-pandoc' " Markdown plugin
+Plug 'vim-pandoc/vim-pandoc-syntax'
+Plug 'dhruvasagar/vim-table-mode'

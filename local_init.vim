@@ -14,12 +14,19 @@ set termguicolors
 set background=dark " or light
 " colorscheme solarized
 
+" Current theme
+let g:airline_theme = 'base16'
+colorscheme base16-default-dark
+
 " To toggle background
 map <F6> :let &background = ( &background == "dark"? "light" : "dark" )<Enter>
 
 " jedi vim force to use python 3
 " ++++++++++++++++++++++++++++++
 let g:jedi#force_py_version = 3
+
+" Markdown preview - previm
+" noremap <leader>p :PrevimOpen<Enter>
 
 " +++++++++++++++++++++++++++++++++++++++++++
 " Use deoplete. and rest of deoplete configs
@@ -64,7 +71,14 @@ noremap <leader>zs :Snippets<Enter>
 noremap <leader>zc :Commands<Enter>
 noremap <leader>zl :Locate<Space>
 noremap <leader>zt :Tags<Space>
+noremap <leader>za :AirlineTheme<Space>
 " ++++++++++++++++ End bindings
+
+" Table mode bindings
+noremap <leader>p :PrevimOpen<Enter>
+let g:table_mode_corner_corner='+'
+let g:table_mode_header_fillchar='='
+" let g:table_mode_corner='|'
 
 " Map bindings for terminal buffer
 tnoremap <C-x> <C-\><C-n>
@@ -78,3 +92,7 @@ let g:UltiSnipsEditSplit="vertical"
 
 " Syntastic checker for racket
 let g:syntastic_racket_code_ayatollah_script = "~/.config/nvim/code-ayatollah.rkt"
+
+" Ignore globals in saved sessions
+set ssop-=options    " do not store global and local values in a session
+set ssop-=folds      " do not store folds
