@@ -19,7 +19,7 @@ let g:airline_theme = 'base16'
 colorscheme base16-default-dark
 
 " To toggle background
-map <F6> :let &background = ( &background == "dark"? "light" : "dark" )<Enter>
+" map <F6> :let &background = ( &background == "dark"? "light" : "dark" )<Enter>
 
 " jedi vim force to use python 3
 " ++++++++++++++++++++++++++++++
@@ -50,7 +50,7 @@ call deoplete#custom#set('ultisnips', 'matchers', ['matcher_fuzzy'])
 
 " Paste toggle for indent or non-indent auto while pasting
 " ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-set pastetoggle=<F5>
+" set pastetoggle=<F5>
 
 " Shortcuts to insert new line in normal mode
 " +++++++++++++++++++++++++++++++++++++++++++
@@ -73,6 +73,11 @@ noremap <leader>zl :Locate<Space>
 noremap <leader>zt :Tags<Space>
 noremap <leader>za :AirlineTheme<Space>
 " ++++++++++++++++ End bindings
+
+" Remap Function keys for use in byobu (as it uses F1 to F9)
+nnoremap <silent> <leader>nf :NERDTreeFind<CR>
+noremap <leader>nt :NERDTreeToggle<CR>
+nmap <silent> <leader>tb :TagbarToggle<CR>
 
 " Table mode bindings
 let g:table_mode_corner_corner='+'
