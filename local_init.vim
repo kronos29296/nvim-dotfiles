@@ -75,7 +75,6 @@ noremap <leader>za :AirlineTheme<Space>
 " ++++++++++++++++ End bindings
 
 " Table mode bindings
-noremap <leader>p :PrevimOpen<Enter>
 let g:table_mode_corner_corner='+'
 let g:table_mode_header_fillchar='='
 " let g:table_mode_corner='|'

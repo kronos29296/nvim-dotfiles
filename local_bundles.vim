@@ -21,3 +21,4 @@ Plug 'chriskempson/base16-vim' " Set of base 16 themes for vim
 Plug 'vim-pandoc/vim-pandoc' " Markdown plugin
 Plug 'vim-pandoc/vim-pandoc-syntax'
 Plug 'dhruvasagar/vim-table-mode'
+Plug 'lervag/vimtex' " Latex Plugin
