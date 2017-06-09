@@ -23,7 +23,7 @@ colorscheme base16-default-dark
 
 " jedi vim force to use python 3
 " ++++++++++++++++++++++++++++++
-let g:jedi#force_py_version = 3
+" let g:jedi#force_py_version = 3
 
 " Markdown preview - previm
 " noremap <leader>p :PrevimOpen<Enter>
@@ -41,6 +41,10 @@ autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 
 " snippets from ultisnips
 call deoplete#custom#set('ultisnips', 'matchers', ['matcher_fuzzy'])
+
+" Clang deoplete options
+let g:deoplete#sources#clang#libclang_path="/usr/lib/llvm-4.0/lib/libclang.so"
+let g:deoplete#sources#clang#clang_header="/usr/lib/llvm-4.0/lib/clang/4.0.0/include"
 
 " omnifuncs "dunno what that is
 "augroup omnifuncs
