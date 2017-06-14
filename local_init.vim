@@ -25,9 +25,6 @@ colorscheme base16-default-dark
 " ++++++++++++++++++++++++++++++
 " let g:jedi#force_py_version = 3
 
-" Markdown preview - previm
-" noremap <leader>p :PrevimOpen<Enter>
-
 " +++++++++++++++++++++++++++++++++++++++++++
 " Use deoplete. and rest of deoplete configs
 " ++++++++++++++++++++++++++++++++++++++++++
@@ -98,9 +95,26 @@ let g:UltiSnipsExpandTrigger="<C-Space>"
 " let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
 let g:UltiSnipsEditSplit="vertical"
 
+" Syntastic bindings
+noremap <leader>le :Errors<CR>
+noremap <leader>lc :lclose<CR>
+
 " Syntastic checker for racket
 let g:syntastic_racket_code_ayatollah_script = "~/.config/nvim/code-ayatollah.rkt"
+let g:syntastic_loc_list_height=5
+
+" Syntastic checker for Haskell and other options
+set wildignore+=*\\tmp\\*,*.swp,*.swo,*.zip,.git,.cabal-sandbox
+
+autocmd FileType haskell set nofoldenable
 
 " Ignore globals in saved sessions
 set ssop-=options    " do not store global and local values in a session
 set ssop-=folds      " do not store folds
+
+"" Tabularize for haskell
+let g:haskell_tabular = 1
+
+vmap a= :Tabularize /=<CR>
+vmap a; :Tabularize /::<CR>
+vmap a- :Tabularize /-><CR>
