@@ -105,6 +105,7 @@ let g:syntastic_loc_list_height=5
 
 " Syntastic checker for Haskell and other options
 set wildignore+=*\\tmp\\*,*.swp,*.swo,*.zip,.git,.cabal-sandbox
+let g:syntastic_haskell_checkers = ['hlint', 'ghc_mod']
 
 autocmd FileType haskell set nofoldenable
 
