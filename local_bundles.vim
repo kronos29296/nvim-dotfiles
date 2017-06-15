@@ -3,6 +3,7 @@ Plug 'Yggdroot/indentLine' " Display line for indent
 " Plug 'vim-scripts/indentpython.vim' " Not that useful
 " Plug 'altercation/vim-colors-solarized'
 Plug 'frankier/neovim-colors-solarized-truecolor-only'
+Plug 'Vimjas/vim-python-pep8-indent'
 
 "" For Deoplete
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
