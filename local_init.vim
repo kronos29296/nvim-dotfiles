@@ -106,7 +106,6 @@ let g:ale_lint_on_text_changed = 'never'
 let g:ale_lint_on_enter = 0
 let g:ale_linters = {
             \    'python': ['flake8','pylint'],
-            \    'racket': ['code-ayatollah']
             \}
 let g:ale_set_loclist = 0
 let g:ale_set_quickfix = 1
