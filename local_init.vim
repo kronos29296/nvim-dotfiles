@@ -119,3 +119,8 @@ let g:haskell_tabular = 1
 vmap a= :Tabularize /=<CR>
 vmap a; :Tabularize /::<CR>
 vmap a- :Tabularize /-><CR>
+
+"" Haskell indent settings
+let g:hindent_on_save = 1
+let g:hindent_line_length = 79
+let g:hindent_indent_size = 2
