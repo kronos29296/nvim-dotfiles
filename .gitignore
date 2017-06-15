@@ -2,3 +2,4 @@
 /plugged.old/
 /session/
 *.old
+/ale_linters/

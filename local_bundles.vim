@@ -3,7 +3,9 @@ Plug 'Yggdroot/indentLine' " Display line for indent
 " Plug 'vim-scripts/indentpython.vim' " Not that useful
 " Plug 'altercation/vim-colors-solarized'
 Plug 'frankier/neovim-colors-solarized-truecolor-only'
+Plug 'rakr/vim-one' " Atom One dark theme
 Plug 'Vimjas/vim-python-pep8-indent'
+Plug 'w0rp/ale'
 
 "" For Deoplete
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -15,7 +17,7 @@ Plug 'zchee/deoplete-clang'
 Plug 'tpope/vim-surround'
 Plug 'ervandew/supertab' " tab for auto complete
 Plug 'tpope/vim-repeat' " dot repeat for plugin actions
-" Plug 'iCyMind/NeoSolarized' " Another solarized
+Plug 'iCyMind/NeoSolarized' " Another solarized
 Plug 'wlangstroth/vim-racket'
 " Plug 'hylang/vim-hy' " Plugin for hy lisp (dialect for python)
 " Plug 'w0ng/vim-hybrid' " Dark theme for vim

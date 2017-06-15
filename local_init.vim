@@ -11,12 +11,16 @@ set gfn=Inconsolata\ 11
 " For true color solarized
 " ++++++++++++++++++++++++
 set termguicolors
-set background=dark " or light
-" colorscheme solarized
+" set background=dark " or light
+colorscheme one
+set t_Co=16
+let g:solarized_termcolors=16
+" set t_Co=256                        " force vim to use 256 colors
+" let g:solarized_termcolors=256      " use solarized 256 fallback
 
 " Current theme
 let g:airline_theme = 'base16'
-colorscheme base16-default-dark
+" colorscheme base16-default-dark
 
 " To toggle background
 " map <F6> :let &background = ( &background == "dark"? "light" : "dark" )<Enter>
@@ -42,12 +46,6 @@ call deoplete#custom#set('ultisnips', 'matchers', ['matcher_fuzzy'])
 " Clang deoplete options
 let g:deoplete#sources#clang#libclang_path="/usr/lib/llvm-4.0/lib/libclang.so"
 let g:deoplete#sources#clang#clang_header="/usr/lib/llvm-4.0/lib/clang/4.0.0/include"
-
-" omnifuncs "dunno what that is
-"augroup omnifuncs
-"  autocmd!
-"  autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
-"augroup end
 
 " Paste toggle for indent or non-indent auto while pasting
 " ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -96,22 +94,38 @@ let g:UltiSnipsExpandTrigger="<C-Space>"
 let g:UltiSnipsEditSplit="vertical"
 
 " Syntastic bindings
-noremap <leader>le :Errors<CR>
-noremap <leader>lc :lclose<CR>
+" noremap <leader>le :Errors<CR>
+" noremap <leader>lc :lclose<CR>
+
+" Ale bindings to navigate errors
+nmap <silent> <C-k> <Plug>(ale_previous_wrap)
+nmap <silent> <C-j> <Plug>(ale_next_wrap)
+nmap <silent> <leader>ll <Plug>(ale_lint)
+
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_lint_on_enter = 0
+let g:ale_linters = {
+            \    'python': ['flake8','pylint'],
+            \    'racket': ['code-ayatollah']
+            \}
+let g:ale_set_loclist = 0
+let g:ale_set_quickfix = 1
+let g:ale_linter_aliases = {'pandoc': 'markdown'}
 
 " Syntastic checker for racket
 let g:syntastic_racket_code_ayatollah_script = "~/.config/nvim/code-ayatollah.rkt"
-let g:syntastic_loc_list_height=5
+" let g:syntastic_loc_list_height=5
 
 " Syntastic checker for Haskell and other options
 set wildignore+=*\\tmp\\*,*.swp,*.swo,*.zip,.git,.cabal-sandbox
-let g:syntastic_haskell_checkers = ['hlint', 'ghc_mod']
+" let g:syntastic_haskell_checkers = ['hlint', 'ghc_mod']
 
 autocmd FileType haskell set nofoldenable
 
 " Ignore globals in saved sessions
 set ssop-=options    " do not store global and local values in a session
 set ssop-=folds      " do not store folds
+:let g:session_persist_colors = 0
 
 "" Tabularize for haskell
 let g:haskell_tabular = 1
