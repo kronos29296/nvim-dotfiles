@@ -44,8 +44,8 @@ augroup END
 " haskell
 autocmd Filetype haskell set ai
 autocmd Filetype haskell set expandtab
-autocmd Filetype haskell set tabstop=8
-autocmd Filetype haskell set shiftwidth=8
+autocmd Filetype haskell set tabstop=2
+autocmd Filetype haskell set shiftwidth=2
 autocmd FileType haskell set nofoldenable
 
 "" txt

@@ -22,6 +22,7 @@ set backspace=indent,eol,start
 set tabstop=4
 set softtabstop=0
 set shiftwidth=4
+set expandtab
 
 "" Map leader to ,
 let mapleader=','
@@ -74,7 +75,8 @@ colorscheme one
 set t_Co=16
 
 "" Disable the blinking cursor and center cursor on screen
-set gcr=a:blinkon0
+" set gcr=a:blinkon0
+set guicursor=
 set scrolloff=5
 
 "" Status bar

@@ -36,6 +36,7 @@ nmap OO O<Esc>j
 nmap <silent> <s-k> <Plug>(ale_previous_wrap)
 nmap <silent> <s-j> <Plug>(ale_next_wrap)
 nmap <silent> <leader>ll <Plug>(ale_lint)
+nmap <silent> <leader>lf <Plug>(ale_fix)
 
 " terminal emulation
 nnoremap <silent> <leader>sh :terminal<CR>

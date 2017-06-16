@@ -31,6 +31,10 @@ let g:UltiSnipsExpandTrigger="<C-Space>"
 " let g:UltiSnipsJumpForwardTrigger="<tab>"
 " let g:UltiSnipsJumpBackwardTrigger="<c-b>"
 
+"" Supertab settings
+"" =================
+let g:SuperTabNoCompleteAfter = ['^', ',', '\s','\\']
+
 "" Vim polyglot
 "" ============
 " Default highlight is better than polyglot
@@ -159,11 +163,14 @@ let g:tagbar_autofocus = 1
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_lint_on_enter = 0
 let g:ale_linters = {
-            \    'python': ['flake8','pylint'],
-            \}
+          \'python': ['flake8','pylint'],
+          \'haskell':['ghc-mod','hlint']
+          \}
 let g:ale_set_loclist = 0
 let g:ale_set_quickfix = 1
 let g:ale_linter_aliases = {'pandoc': 'markdown'}
+let g:ale_fixers = {
+            \'python': ['autopep8']}
 
 "" Table mode bindings
 "" ===================

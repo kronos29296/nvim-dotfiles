@@ -5,16 +5,14 @@ if &compatible
   set nocompatible
 endif
 
-" let dein_exists=expand('/home/kronos/.config/nvim/bundle/repos/github.com/Shougo/dein.vim')
-
 "" Dein plugin manager
 set runtimepath+=$HOME/.config/nvim/deins/repos/github.com/Shougo/dein.vim
 
-if dein#load_state('/home/kronos/.config/nvim/deins')
+if dein#load_state('$HOME/.config/nvim/deins')
 
-  call dein#begin('/home/kronos/.config/nvim/deins') " Plugin Directory
+  call dein#begin('$HOME/.config/nvim/deins') " Plugin Directory
 
-  call dein#add('/home/kronos/.config/nvim/deins/repos/github.com/Shougo/dein.vim') " Dein Location directory
+  call dein#add('$HOME/.config/nvim/deins/repos/github.com/Shougo/dein.vim') " Dein Location directory
 
 "" ==================
 "" Plugins start here
@@ -54,7 +52,6 @@ if dein#load_state('/home/kronos/.config/nvim/deins')
 "" Formatting, Indent and eye-candy
 "" ================================
   call dein#add('tpope/vim-commentary')
-  call dein#add('Yggdroot/indentLine') " Display line for indent
   call dein#add('godlygeek/tabular') " Prettify Haskell
   call dein#add('Yggdroot/indentLine')
   call dein#add('bronson/vim-trailing-whitespace')
@@ -79,10 +76,10 @@ if dein#load_state('/home/kronos/.config/nvim/deins')
 
 "" For Deoplete
 "" ============
-  call dein#add('Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' })
+  call dein#add('Shougo/deoplete.nvim')
   call dein#add('zchee/deoplete-jedi')
   call dein#add('zchee/deoplete-zsh')
-  call dein#add('Shougo/neoinclude.vim')
+  " call dein#add('Shougo/neoinclude.vim')
   call dein#add('zchee/deoplete-clang')
 
 "" Snippets
