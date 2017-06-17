@@ -94,7 +94,7 @@ if dein#load_state('$HOME/.config/nvim/deins')
   call dein#add('SirVer/ultisnips')
   call dein#add('honza/vim-snippets')
 
-  " call dein#add('ludwig/split-manpage.vim')
+"  call dein#add('ludwig/split-manpage.vim')
 
 "" Markdown, Pandoc, Latex
 "" ===========================
@@ -122,8 +122,3 @@ if dein#load_state('$HOME/.config/nvim/deins')
   call dein#end()
   call dein#save_state()
 endif
-
-if dein#check_install()
-  call dein#install()
-endif
-
