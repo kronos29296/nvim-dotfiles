@@ -42,11 +42,16 @@ augroup vimrc-python
 augroup END
 
 " haskell
-autocmd Filetype haskell set ai
-autocmd Filetype haskell set expandtab
-autocmd Filetype haskell set tabstop=2
-autocmd Filetype haskell set shiftwidth=2
-autocmd FileType haskell set nofoldenable
+augroup haskell-lang
+  autocmd!
+  autocmd FileType haskell setlocal expandtab shiftwidth=2 tabstop=4 colorcolumn=79
+      \ nofoldenable
+augroup END
+" autocmd Filetype haskell set ai
+" autocmd Filetype haskell set expandtab
+" autocmd Filetype haskell set tabstop=2
+" autocmd Filetype haskell set shiftwidth=2
+" autocmd FileType haskell set nofoldenable
 
 "" txt
 augroup vimrc-wrapping

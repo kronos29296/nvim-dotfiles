@@ -11,9 +11,6 @@ nnoremap N Nzzzv
 " To toggle background
 " map <F6> :let &background = ( &background == "dark"? "light" : "dark" )<Enter>
 
-" Paste toggle for indent or non-indent auto while pasting
-" set pastetoggle=<F5>
-
 " Tagbar
 " nmap <silent> <F4> :TagbarToggle<CR>
 "
@@ -100,6 +97,9 @@ noremap YY "+y<CR>
 noremap <leader>p "+gP<CR>
 noremap XX "+x<CR>
 
+" Paste toggle for indent or non-indent auto while pasting
+" set pastetoggle=<F5>
+
 "" Vmap for maintain Visual Mode after shifting > and <
 vmap < <gv
 vmap > >gv
@@ -131,3 +131,8 @@ noremap <leader>za :AirlineTheme<Space>
 vmap a= :Tabularize /=<CR>
 vmap a; :Tabularize /::<CR>
 vmap a- :Tabularize /-><CR>
+" vmap a" :Tabularize /^."\{-}<CR>
+
+" deoplete tab-complete which works
+inoremap <silent><expr> <tab> pumvisible() ? "\<c-p>" : "\<tab>"
+inoremap <silent><expr> <S-tab> pumvisible() ? "\<c-n>" : "\<S-tab>"

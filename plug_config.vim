@@ -3,6 +3,7 @@
 "" Plugin settings
 "" ===============
 
+
 "" Deoplete
 "" ========
 
@@ -13,7 +14,8 @@ endif
 
 " let g:deoplete#disable_auto_complete = 1
 "" To close preview window on insert
-autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
+"InsertLeave
+autocmd CompleteDone * if pumvisible() == 0 | pclose | endif
 
 " snippets from ultisnips
 call deoplete#custom#set('ultisnips', 'matchers', ['matcher_fuzzy'])
@@ -24,8 +26,9 @@ let g:deoplete#sources#clang#clang_header="/usr/lib/llvm-4.0/lib/clang/4.0.0/inc
 
 "" Ultisnips
 "" =========
-let g:UltiSnipsEditSplit="vertical"
+" let g:UltiSnipsEditSplit="vertical"
 let g:UltiSnipsExpandTrigger="<C-Space>"
+"
 " Conflicting Shortcuts disabled use Supertab
 " let g:UltiSnipsExpandTrigger="<tab>"
 " let g:UltiSnipsJumpForwardTrigger="<tab>"
@@ -33,7 +36,7 @@ let g:UltiSnipsExpandTrigger="<C-Space>"
 
 "" Supertab settings
 "" =================
-let g:SuperTabNoCompleteAfter = ['^', ',', '\s','\\']
+" let g:SuperTabNoCompleteAfter = ['^', ',', '\s','\\']
 
 "" Vim polyglot
 "" ============
@@ -150,8 +153,8 @@ let g:haskell_tabular = 1
 "" Haskell indent settings
 "" =======================
 let g:hindent_on_save = 1
-let g:hindent_line_length = 79
-let g:hindent_indent_size = 2
+let g:hindent_line_length = 80
+let g:hindent_indent_size = 4
 
 "" Tagbar
 "" ======
