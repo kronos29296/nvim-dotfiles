@@ -75,7 +75,7 @@ let g:airline#extensions#tagbar#enabled = 1
 let g:airline_skip_empty_sections = 1
 let g:airline#extensions#virtualenv#enabled = 1
 
-let g:airline_theme = 'base16'
+let g:airline_theme = 'solarized'
 
 "" Airline UTF-8 symbols
 if !exists('g:airline_symbols')
@@ -169,8 +169,8 @@ let g:ale_linters = {
           \'python': ['flake8','pylint'],
           \'haskell':['ghc-mod','hlint']
           \}
-let g:ale_set_loclist = 0
-let g:ale_set_quickfix = 1
+let g:ale_set_loclist = 1
+let g:ale_set_quickfix = 0
 let g:ale_linter_aliases = {'pandoc': 'markdown'}
 let g:ale_fixers = {
             \'python': ['autopep8']}

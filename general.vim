@@ -71,7 +71,7 @@ set gfn=Inconsolata\ 11
 
 set termguicolors
 set background=dark " or light
-colorscheme one
+colorscheme NeoSolarized
 set t_Co=16
 
 "" Disable the blinking cursor and center cursor on screen

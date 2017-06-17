@@ -74,6 +74,10 @@ noremap <leader>w :bn<CR>
 "" Close buffer
 noremap <leader>c :bd<CR>
 
+"" For quickfix and loc list
+noremap <leader>lo :lw<CR>
+noremap <leader>lc :lclose<CR>
+
 "" Clean search (highlight)
 nnoremap <silent> <leader><space> :noh<cr>
 
@@ -134,5 +138,5 @@ vmap a- :Tabularize /-><CR>
 " vmap a" :Tabularize /^."\{-}<CR>
 
 " deoplete tab-complete which works
-inoremap <silent><expr> <tab> pumvisible() ? "\<c-p>" : "\<tab>"
-inoremap <silent><expr> <S-tab> pumvisible() ? "\<c-n>" : "\<S-tab>"
+inoremap <silent><expr> <tab> pumvisible() ? "\<c-n>" : "\<tab>"
+inoremap <silent><expr> <S-tab> pumvisible() ? "\<c-p>" : "\<S-tab>"

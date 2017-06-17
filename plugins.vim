@@ -34,7 +34,7 @@ if dein#load_state('$HOME/.config/nvim/deins')
   " call dein#add('frankier/neovim-colors-solarized-truecolor-only')
   call dein#add('rakr/vim-one')
   call dein#add('chriskempson/base16-vim')
-  " call dein#add('iCyMind/NeoSolarized')
+  call dein#add('iCyMind/NeoSolarized')
   " call dein#add('altercation/vim-colors-solarized')
 "   call dein#add('w0ng/vim-hybrid')
 
