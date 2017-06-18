@@ -137,6 +137,7 @@ let Grep_Skip_Dirs = '.git node_modules'
 if executable('ag')
   let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
   set grepprg=ag\ --nogroup\ --nocolor
+  command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings --ignore-case --hidden --follow --glob "!.git/*" --color "always" '.shellescape(<q-args>).'| tr -d "\017"', 1, <bang>0)
 endif
 
 " ripgrep
@@ -174,6 +175,7 @@ let g:ale_set_quickfix = 0
 let g:ale_linter_aliases = {'pandoc': 'markdown'}
 let g:ale_fixers = {
             \'python': ['autopep8']}
+let g:ale_python_autopep8_options = '-aa'
 
 "" Table mode bindings
 "" ===================
