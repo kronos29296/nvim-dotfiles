@@ -24,6 +24,15 @@ call deoplete#custom#set('ultisnips', 'matchers', ['matcher_fuzzy'])
 let g:deoplete#sources#clang#libclang_path="/usr/lib/llvm-4.0/lib/libclang.so"
 let g:deoplete#sources#clang#clang_header="/usr/lib/llvm-4.0/lib/clang/4.0.0/include"
 
+" Deoplete for Lua - xolox plugin
+let g:lua_check_syntax = 0
+let g:lua_complete_omni = 1
+let g:lua_complete_dynamic = 0
+let g:lua_define_completion_mappings = 0
+
+" let g:deoplete#omni#functions = {'lua' : 'xolox#lua#omnifunc' }
+let g:deoplete#omni#functions = { 'lua' : 'xolox#lua#completefunc' }
+
 "" Ultisnips
 "" =========
 " let g:UltiSnipsEditSplit="vertical"
