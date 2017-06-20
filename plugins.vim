@@ -70,7 +70,7 @@ if dein#load_state('$HOME/.config/nvim/deins')
 "" ===========
   call dein#add('xolox/vim-misc')
   call dein#add('xolox/vim-session')
-  " call dein#add('Shougo/vimproc.vim', {'build': 'make'})
+  call dein#add('Shougo/vimproc.vim', {'build': 'make'})
 
 "" Autocomplete and syntax highlight
 "" =================================
