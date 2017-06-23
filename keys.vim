@@ -78,8 +78,9 @@ noremap <leader>w :bn<CR>
 noremap <leader>c :bd<CR>
 
 "" For quickfix and loc list
-noremap <leader>lo :lw<CR>
-noremap <leader>lc :lclose<CR>
+noremap <leader>lo :cw<CR>
+noremap <leader>lc :cclose<CR>
+noremap <leader>cl :lclose<CR>
 
 "" Clean search (highlight)
 nnoremap <silent> <leader><space> :noh<cr>
@@ -143,3 +144,6 @@ vmap a- :Tabularize /-><CR>
 " deoplete tab-complete which works
 inoremap <silent><expr> <tab> pumvisible() ? "\<c-n>" : "\<tab>"
 inoremap <silent><expr> <S-tab> pumvisible() ? "\<c-p>" : "\<S-tab>"
+
+" Pandoc keybindings
+noremap <leader>toc :TOC<CR>

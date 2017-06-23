@@ -35,6 +35,8 @@ let g:deoplete#omni#functions = { 'lua' : 'xolox#lua#completefunc' }
 
 "" vim-pandoc fold
 let g:pandoc#folding#level=1
+let g:pandoc#filetypes#handled = ["pandoc", "markdown"]
+" let g:pandoc#modules#disabled = ["folding"]
 
 "" Ultisnips
 "" =========
@@ -182,8 +184,8 @@ let g:ale_linters = {
           \'python': ['flake8','pylint'],
           \'haskell':['ghc-mod','hlint']
           \}
-let g:ale_set_loclist = 1
-let g:ale_set_quickfix = 0
+let g:ale_set_loclist = 0
+let g:ale_set_quickfix = 1
 let g:ale_linter_aliases = {'pandoc': 'markdown'}
 let g:ale_fixers = {
             \'python': ['autopep8']}
@@ -193,4 +195,7 @@ let g:ale_python_autopep8_options = '-aa'
 "" ===================
 let g:table_mode_corner_corner='+'
 let g:table_mode_header_fillchar='='
+let g:table_mode_align_char=':'
+let g:table_mode_auto_align = 0
+
 
