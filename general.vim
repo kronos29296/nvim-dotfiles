@@ -30,6 +30,10 @@ let mapleader=','
 "" Enable hidden buffers
 set hidden
 
+"" Enable persistent undo
+set undofile
+set undodir=$HOME/.config/nvim/undo
+
 "" Searching
 set hlsearch
 set incsearch

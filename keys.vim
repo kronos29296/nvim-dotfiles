@@ -8,12 +8,15 @@
 nnoremap n nzzzv
 nnoremap N Nzzzv
 
+"" Mundo undo plugin
+nnoremap <leader>ut :MundoToggle<CR>
+
 " To toggle background
 " map <F6> :let &background = ( &background == "dark"? "light" : "dark" )<Enter>
 
 " Tagbar
 " nmap <silent> <F4> :TagbarToggle<CR>
-"
+
 " Remap Function keys for use in byobu (as it uses F1 to F9)
 nnoremap <silent> <leader>nf :NERDTreeFind<CR>
 noremap <leader>nt :NERDTreeToggle<CR>
