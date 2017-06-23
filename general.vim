@@ -67,7 +67,6 @@ set mouse=a
 set mousemodel=popup
 
 "" Theme and font
-set t_Co=16
 set guioptions=egmrti " Gui window options
 " set gfn=Monospace\ 10
 set colorcolumn=79
@@ -76,7 +75,6 @@ set gfn=Inconsolata\ 11
 set termguicolors
 set background=dark " or light
 colorscheme NeoSolarized
-set t_Co=16
 
 "" Disable the blinking cursor and center cursor on screen
 " set gcr=a:blinkon0
