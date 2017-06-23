@@ -100,14 +100,13 @@ if dein#load_state('$HOME/.config/nvim/deins')
 
 "" Markdown, Pandoc, Latex
 "" ===========================
-  call dein#add('vim-pandoc/vim-pandoc', { 'on_ft' : 'pandoc'})
-  call dein#add('vim-pandoc/vim-pandoc-syntax', { 'on_ft' : 'pandoc'})
-  call dein#add('dhruvasagar/vim-table-mode', { 'on_ft' : 'pandoc'})
+  call dein#add('vim-pandoc/vim-pandoc')
+  call dein#add('vim-pandoc/vim-pandoc-syntax')
+  call dein#add('dhruvasagar/vim-table-mode', { 'on_ft' : ['pandoc', 'markdown']})
   call dein#add('lervag/vimtex', { 'on_ft' : 'latex'})
 
 "" Python
 "" ======
-  " call dein#add('raimon49/requirements.txt.vim', {'for': 'requirements'})
   call dein#add('Vimjas/vim-python-pep8-indent')
 "   call dein#add('hylang/vim-hy')
 
