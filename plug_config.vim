@@ -196,6 +196,6 @@ let g:ale_python_autopep8_options = '-aa'
 let g:table_mode_corner_corner='+'
 let g:table_mode_header_fillchar='='
 let g:table_mode_align_char=':'
-let g:table_mode_auto_align = 0
+" let g:table_mode_auto_align = 0
 
 
