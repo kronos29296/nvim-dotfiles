@@ -61,6 +61,8 @@ syntax on
 set ruler
 set number
 set relativenumber
+" set ch=2
+set noshowmode
 
 "" For mouse support
 set mouse=a

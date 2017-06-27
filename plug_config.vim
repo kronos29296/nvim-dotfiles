@@ -198,4 +198,5 @@ let g:table_mode_header_fillchar='='
 let g:table_mode_align_char=':'
 " let g:table_mode_auto_align = 0
 
-
+"" Echodoc - SHougo
+let g:echodoc#enable_at_startup=1

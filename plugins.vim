@@ -88,6 +88,8 @@ if dein#load_state('$HOME/.config/nvim/deins')
   call dein#add('zchee/deoplete-zsh', { 'on_ft' : 'zsh'})
   call dein#add('Shougo/neoinclude.vim')
   call dein#add('xolox/vim-lua-ftplugin', { 'on_ft' : 'lua'})
+  call dein#add('Shougo/echodoc.vim')
+  " call dein#add('Shougo/denite.nvim')
 
   call dein#add('zchee/deoplete-clang', { 'on_ft' : ['c','cpp']})
 
