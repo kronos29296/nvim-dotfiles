@@ -47,7 +47,7 @@ if dein#load_state('$HOME/.config/nvim/deins')
   call dein#add('Raimondi/delimitMate')
   call dein#add('majutsushi/tagbar')
   call dein#add('sheerun/vim-polyglot')
-  call dein#add('simnalamburt/vim-mundo')
+  call dein#add('mbbill/undotree')
 
 "" Search
 "" ======

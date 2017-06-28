@@ -9,7 +9,7 @@ nnoremap n nzzzv
 nnoremap N Nzzzv
 
 "" Mundo undo plugin
-nnoremap <leader>ut :MundoToggle<CR>
+nnoremap <leader>ut :UndotreeToggle<CR>
 
 " To toggle background
 " map <F6> :let &background = ( &background == "dark"? "light" : "dark" )<Enter>

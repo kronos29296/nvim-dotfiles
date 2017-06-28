@@ -200,3 +200,7 @@ let g:table_mode_align_char=':'
 
 "" Echodoc - SHougo
 let g:echodoc#enable_at_startup=1
+
+"" Undotree
+"" ========
+let g:undotree_SetFocusWhenToggle=1
