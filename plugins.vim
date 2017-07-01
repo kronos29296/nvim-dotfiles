@@ -78,7 +78,7 @@ if dein#load_state('$HOME/.config/nvim/deins')
 
 "  call dein#add('Valloric/YouCompleteMe')
   call dein#add('w0rp/ale')
-  call dein#add('xu-cheng/brew.vim')
+  " call dein#add('xu-cheng/brew.vim')
   call dein#add('wlangstroth/vim-racket')
 
 "" For Deoplete
