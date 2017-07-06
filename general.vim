@@ -47,11 +47,12 @@ set noswapfile
 set fileformats=unix,dos,mac
 set showcmd
 
-if exists('$SHELL')
-    set shell=$SHELL
-else
-    set shell=/bin/sh
-endif
+" if exists('$SHELL')
+    " set shell=$SHELL
+" else
+    " set shell=/bin/sh
+" endif
+set shell=/bin/sh
 
 
 "" ===============

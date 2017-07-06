@@ -51,7 +51,7 @@ if dein#load_state('$HOME/.config/nvim/deins')
 
 "" Search
 "" ======
-  call dein#add('junegunn/fzf', { 'build': './install' })
+  " call dein#add('junegunn/fzf', { 'build': './install' })
   call dein#add('junegunn/fzf.vim', { 'depends': 'fzf'})
   " call dein#add('vim-scripts/grep.vim')
   call dein#add('vim-scripts/CSApprox')
