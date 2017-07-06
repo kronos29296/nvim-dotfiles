@@ -12,6 +12,8 @@ source $HOME/.config/nvim/file_type.vim
 command Update :call dein#update()
 command Getlog :call dein#get_updates_log()
 command Remove :call map(dein#check_clean(), "delete(v:val, 'rf')")
+command Install :call dein#install()
+command Clean :call dein#clear_state()
 
 " if dein#check_install()
 "   call dein#install()
