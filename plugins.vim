@@ -114,11 +114,11 @@ if dein#load_state('$HOME/.config/nvim/deins')
 
 "" Haskell
 "" =======
-  call dein#add('eagletmt/neco-ghc', { 'on_ft' : 'haskell'})
+  " call dein#add('eagletmt/neco-ghc', { 'on_ft' : 'haskell'})
   call dein#add('dag/vim2hs', { 'on_ft' : 'haskell'})
   call dein#add('pbrisbin/vim-syntax-shakespeare', { 'on_ft' : 'haskell'})
   call dein#add('alx741/vim-hindent', { 'on_ft' : 'haskell'})
-  call dein#add('eagletmt/ghcmod-vim', { 'on_ft' : 'haskell'})
+  " call dein#add('eagletmt/ghcmod-vim', { 'on_ft' : 'haskell'})
 
 "*****************************************************************************
 
