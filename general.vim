@@ -52,7 +52,7 @@ set showcmd
 " else
     " set shell=/bin/sh
 " endif
-set shell=/bin/sh
+set shell=/bin/bash
 
 
 "" ===============
@@ -73,7 +73,7 @@ set mousemodel=popup
 set guioptions=egmrti " Gui window options
 " set gfn=Monospace\ 10
 set colorcolumn=79
-set gfn=Inconsolata\ 11
+set gfn="Inconsolata"\ 11
 
 set termguicolors
 set background=dark " or light
@@ -116,7 +116,8 @@ endif
 
 "" Copy/Paste/Cut
 if has('unnamedplus')
-  set clipboard=unnamed,unnamedplus
+  " set clipboard=unnamed,unnamedplus
+  set clipboard+=unnamed
 endif
 
 "" Auto read changed files (not periodic)
