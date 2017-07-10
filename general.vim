@@ -47,12 +47,12 @@ set noswapfile
 set fileformats=unix,dos,mac
 set showcmd
 
-" if exists('$SHELL')
-    " set shell=$SHELL
-" else
-    " set shell=/bin/sh
-" endif
-set shell=/bin/bash
+if exists('$SHELL')
+    set shell=$SHELL
+else
+    set shell=/bin/sh
+endif
+" set shell=/bin/zsh
 
 
 "" ===============
@@ -116,8 +116,8 @@ endif
 
 "" Copy/Paste/Cut
 if has('unnamedplus')
-  " set clipboard=unnamed,unnamedplus
-  set clipboard+=unnamed
+  set clipboard+=unnamed,unnamedplus
+  " set clipboard+=unnamed
 endif
 
 "" Auto read changed files (not periodic)
