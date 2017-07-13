@@ -14,6 +14,7 @@ command Getlog :call dein#get_updates_log()
 command Remove :call map(dein#check_clean(), "delete(v:val, 'rf')")
 command Install :call dein#install()
 command Clean :call dein#clear_state()
+command NF :set nofoldenable
 
 " if dein#check_install()
 "   call dein#install()
