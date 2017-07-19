@@ -8,7 +8,7 @@ endif
 "" Dein settings
 "" =============
 let g:dein#install_process_timeout=600
-let g:dein#install_max_processes=1
+let g:dein#install_max_processes=2
 let g:dein#install_log_filename='$HOME/.config/nvim/deins/install_log'
 
 "" Dein plugin manager
