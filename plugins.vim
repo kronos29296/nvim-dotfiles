@@ -121,6 +121,10 @@ if dein#load_state('$HOME/.config/nvim/deins')
   call dein#add('alx741/vim-hindent', { 'on_ft' : 'haskell'})
   " call dein#add('eagletmt/ghcmod-vim', { 'on_ft' : 'haskell'})
 
+"" R
+"" =
+  call dein#add('jalvesaq/Nvim-R', { 'on_ft' : 'r'})
+
 "*****************************************************************************
 
   call dein#end()
