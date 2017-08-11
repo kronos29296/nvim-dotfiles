@@ -1,6 +1,9 @@
 "" This is neovim plugin file
 "" Do not set the settings here
 
+" Python path elsewhere
+let g:python3_host_prog = "/usr/bin/python"
+
 source $HOME/.config/nvim/plugins.vim
 source $HOME/.config/nvim/general.vim
 source $HOME/.config/nvim/keys.vim
