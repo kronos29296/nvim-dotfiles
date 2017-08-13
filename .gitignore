@@ -2,3 +2,4 @@
 /session/
 *.old
 /undo/
+/.netrwhist
