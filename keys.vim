@@ -18,8 +18,9 @@ nnoremap <leader>ut :UndotreeToggle<CR>
 " nmap <silent> <F4> :TagbarToggle<CR>
 
 " Remap Function keys for use in byobu (as it uses F1 to F9)
-nnoremap <silent> <leader>nf :NERDTreeFind<CR>
-noremap <leader>nt :NERDTreeToggle<CR>
+" nnoremap <silent> <leader>nf :NERDTreeFind<CR>
+" noremap <leader>nt :NERDTreeToggle<CR>
+
 nmap <silent> <leader>tb :TagbarToggle<CR>
 
 "" Nerd Tree Bindings

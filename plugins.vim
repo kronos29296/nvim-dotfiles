@@ -31,18 +31,18 @@ if dein#load_state('$HOME/.config/nvim/deins')
   call dein#add('vim-airline/vim-airline')
   call dein#add('vim-airline/vim-airline-themes')
   call dein#add('tomasr/molokai')
-  " call dein#add('frankier/neovim-colors-solarized-truecolor-only')
   call dein#add('altercation/vim-colors-solarized')
-  " call dein#add('rakr/vim-one')
-  " call dein#add('chriskempson/base16-vim')
   call dein#add('iCyMind/NeoSolarized')
   " call dein#add('altercation/vim-colors-solarized')
-"   call dein#add('w0ng/vim-hybrid')
+  " call dein#add('w0ng/vim-hybrid')
+  " call dein#add('rakr/vim-one')
+  " call dein#add('chriskempson/base16-vim')
+  " call dein#add('frankier/neovim-colors-solarized-truecolor-only')
 
 "" File management
 "" ===============
-  call dein#add('scrooloose/nerdtree', { 'on_cmd': ['NERDTreeFind','NERDTreeToggle']})
-  call dein#add('jistr/vim-nerdtree-tabs')
+  " call dein#add('scrooloose/nerdtree', { 'on_cmd': ['NERDTreeFind','NERDTreeToggle']})
+  " call dein#add('jistr/vim-nerdtree-tabs')
   call dein#add('tpope/vim-fugitive')
   call dein#add('airblade/vim-gitgutter')
   call dein#add('Raimondi/delimitMate')
@@ -52,11 +52,11 @@ if dein#load_state('$HOME/.config/nvim/deins')
 
 "" Search
 "" ======
-  " call dein#add('junegunn/fzf', { 'build': './install' })
   call dein#add('junegunn/fzf')
   call dein#add('junegunn/fzf.vim', { 'depends': 'fzf'})
-  " call dein#add('vim-scripts/grep.vim')
   call dein#add('vim-scripts/CSApprox')
+  " call dein#add('vim-scripts/grep.vim')
+  " call dein#add('junegunn/fzf', { 'build': './install' })
 
 "" Formatting, Indent and eye-candy
 "" ================================
@@ -65,9 +65,9 @@ if dein#load_state('$HOME/.config/nvim/deins')
   " Prettify Haskell
   call dein#add('Yggdroot/indentLine')
   call dein#add('bronson/vim-trailing-whitespace')
-"  call dein#add('vim-scripts/indentpython.vim')
   call dein#add('tpope/vim-surround')
   call dein#add('tpope/vim-repeat') " dot repeat for plugin actions
+ " call dein#add('vim-scripts/indentpython.vim')
 
 "" Vim-Session
 "" ===========
