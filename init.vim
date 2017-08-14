@@ -1,7 +1,7 @@
 "" This is neovim plugin file
 "" Do not set the settings here
 
-" Python path elsewhere
+" Python path elsewhere cuz I use Anaconda
 let g:python3_host_prog = "/usr/bin/python"
 
 source $HOME/.config/nvim/plugins.vim

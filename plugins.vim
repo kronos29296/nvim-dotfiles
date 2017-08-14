@@ -33,6 +33,7 @@ if dein#load_state('$HOME/.config/nvim/deins')
   call dein#add('tomasr/molokai')
   call dein#add('altercation/vim-colors-solarized')
   call dein#add('iCyMind/NeoSolarized')
+  " call dein#add('vim-scripts/CSApprox')
   " call dein#add('altercation/vim-colors-solarized')
   " call dein#add('w0ng/vim-hybrid')
   " call dein#add('rakr/vim-one')
@@ -52,11 +53,9 @@ if dein#load_state('$HOME/.config/nvim/deins')
 
 "" Search
 "" ======
-  call dein#add('junegunn/fzf')
   call dein#add('junegunn/fzf.vim', { 'depends': 'fzf'})
-  call dein#add('vim-scripts/CSApprox')
+  call dein#add('junegunn/fzf', { 'build': './install' })
   " call dein#add('vim-scripts/grep.vim')
-  " call dein#add('junegunn/fzf', { 'build': './install' })
 
 "" Formatting, Indent and eye-candy
 "" ================================
@@ -78,10 +77,10 @@ if dein#load_state('$HOME/.config/nvim/deins')
 "" Autocomplete and syntax highlight
 "" =================================
 
-"  call dein#add('Valloric/YouCompleteMe')
   call dein#add('w0rp/ale')
+  " call dein#add('Valloric/YouCompleteMe')
   " call dein#add('xu-cheng/brew.vim')
-  call dein#add('wlangstroth/vim-racket')
+  " call dein#add('wlangstroth/vim-racket')
 
 "" For Deoplete
 "" ============
@@ -89,7 +88,6 @@ if dein#load_state('$HOME/.config/nvim/deins')
   call dein#add('zchee/deoplete-jedi', { 'on_ft' : 'python'})
   call dein#add('zchee/deoplete-zsh', { 'on_ft' : 'zsh'})
   call dein#add('Shougo/neoinclude.vim')
-  call dein#add('xolox/vim-lua-ftplugin', { 'on_ft' : 'lua'})
   call dein#add('Shougo/echodoc.vim')
   " call dein#add('Shougo/denite.nvim')
 
@@ -112,15 +110,15 @@ if dein#load_state('$HOME/.config/nvim/deins')
 "" Python
 "" ======
   call dein#add('Vimjas/vim-python-pep8-indent')
-"   call dein#add('hylang/vim-hy')
+  " call dein#add('hylang/vim-hy')
 
 "" Haskell
 "" =======
-  " call dein#add('eagletmt/neco-ghc', { 'on_ft' : 'haskell'})
   call dein#add('dag/vim2hs', { 'on_ft' : 'haskell'})
   call dein#add('pbrisbin/vim-syntax-shakespeare', { 'on_ft' : 'haskell'})
   call dein#add('alx741/vim-hindent', { 'on_ft' : 'haskell'})
   " call dein#add('eagletmt/ghcmod-vim', { 'on_ft' : 'haskell'})
+  " call dein#add('eagletmt/neco-ghc', { 'on_ft' : 'haskell'})
 
 "" R
 "" =
