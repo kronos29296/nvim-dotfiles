@@ -1,3 +1,20 @@
+"=====================================
+"  Deprecated because Dein freezes with
+"  fzf installation dunno why.
+"=======================================
+" Dein commands for ease of use
+" command Update :call dein#update()
+" command Getlog :echo dein#get_updates_log()
+" command Remove :call map(dein#check_clean(), "delete(v:val, 'rf')")
+" command Install :call dein#install()
+" command Clean :call dein#clear_state()
+" if dein#check_install()
+"   call dein#install()
+" endif
+"
+" if len(dein#check_clean())
+"   call map(dein#check_clean(), "delete(v:val, 'rf')")
+" endif
 
 "" Be iMproved
 "" ===========
@@ -54,7 +71,7 @@ if dein#load_state('$HOME/.config/nvim/deins')
 "" Search
 "" ======
   call dein#add('junegunn/fzf.vim', { 'depends': 'fzf'})
-  call dein#add('junegunn/fzf', { 'build': './install' })
+  call dein#add('junegunn/fzf', { 'build': './install --all' })
   " call dein#add('vim-scripts/grep.vim')
 
 "" Formatting, Indent and eye-candy
