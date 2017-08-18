@@ -42,7 +42,7 @@ Plug 'mbbill/undotree'
 "" Search
 "" ======
 Plug 'junegunn/fzf.vim', { 'depends': 'fzf'}
-Plug 'junegunn/fzf', {'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf', {'do': './install --bin' }
 " Plug 'vim-scripts/grep.vim'
 
 "" Formatting, Indent and eye-candy
