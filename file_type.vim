@@ -47,6 +47,7 @@ augroup haskell-lang
   autocmd FileType haskell setlocal expandtab shiftwidth=2 colorcolumn=79
       \ nofoldenable softtabstop=2
 augroup END
+" autocmd Filetype haskell set formatprg=brittany
 " autocmd Filetype haskell set ai
 " autocmd Filetype haskell set expandtab
 " autocmd Filetype haskell set tabstop=2

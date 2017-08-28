@@ -25,10 +25,10 @@ let g:deoplete#sources#clang#libclang_path="/usr/lib/llvm-4.0/lib/libclang.so"
 let g:deoplete#sources#clang#clang_header="/usr/lib/llvm-4.0/lib/clang/4.0.0/include"
 
 " Deoplete for Lua - xolox plugin
-let g:lua_check_syntax = 0
-let g:lua_complete_omni = 1
-let g:lua_complete_dynamic = 0
-let g:lua_define_completion_mappings = 0
+" let g:lua_check_syntax = 0
+" let g:lua_complete_omni = 1
+" let g:lua_complete_dynamic = 0
+" let g:lua_define_completion_mappings = 0
 
 " let g:deoplete#omni#functions = {'lua' : 'xolox#lua#omnifunc' }
 let g:deoplete#omni#functions = { 'lua' : 'xolox#lua#completefunc' }
@@ -48,10 +48,6 @@ let g:UltiSnipsExpandTrigger="<C-Space>"
 " let g:UltiSnipsJumpForwardTrigger="<tab>"
 " let g:UltiSnipsJumpBackwardTrigger="<c-b>"
 
-"" Supertab settings
-"" =================
-" let g:SuperTabNoCompleteAfter = ['^', ',', '\s','\\']
-
 "" Vim polyglot
 "" ============
 " Default highlight is better than polyglot
@@ -67,7 +63,7 @@ let g:indentLine_faster = 1
 
 "" CSApprox plugin
 "" ===============
-let g:CSApprox_loaded = 1
+" let g:CSApprox_loaded = 1
 
 "" session management
 "" ==================
@@ -79,7 +75,7 @@ let g:session_command_aliases = 1
 " Ignore globals in saved sessions
 set ssop-=options    " do not store global and local values in a session
 set ssop-=folds      " do not store folds
-:let g:session_persist_colors = 0
+let g:session_persist_colors = 0
 
 "" vim airline
 "" ===========

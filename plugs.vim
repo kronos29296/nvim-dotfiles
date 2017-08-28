@@ -105,8 +105,8 @@ Plug 'Vimjas/vim-python-pep8-indent'
 Plug 'dag/vim2hs', { 'for' : 'haskell'}
 Plug 'pbrisbin/vim-syntax-shakespeare', { 'for' : 'haskell'}
 Plug 'alx741/vim-hindent', { 'for' : 'haskell'}
+Plug 'eagletmt/neco-ghc', { 'for' : 'haskell'}
 " Plug 'eagletmt/ghcmod-vim', { 'for' : 'haskell'}
-" Plug 'eagletmt/neco-ghc', { 'for' : 'haskell'}
 
 "" R
 "" =
