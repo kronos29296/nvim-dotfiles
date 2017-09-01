@@ -3,6 +3,9 @@
 "" Plugin settings
 "" ===============
 
+"" Color theme
+colorscheme base16-3024
+let g:airline_theme = 'base16_3024'
 
 "" Deoplete
 "" ========
@@ -85,7 +88,6 @@ let g:airline#extensions#tagbar#enabled = 1
 let g:airline_skip_empty_sections = 1
 let g:airline#extensions#virtualenv#enabled = 1
 
-let g:airline_theme = 'solarized'
 
 "" Airline UTF-8 symbols
 if !exists('g:airline_symbols')
@@ -141,20 +143,30 @@ let Grep_Skip_Files = '*.log *.db'
 let Grep_Skip_Dirs = '.git node_modules'
 
 "" fzf.vim
-" let $FZF_DEFAULT_COMMAND =  "find * -path '*/\.*' -prune -o -path 'node_modules/**' -prune -o -path 'target/**' -prune -o -path 'dist/**' -prune -o  -type f -print -o -type l -print 2> /dev/null"
+" let $FZF_DEFAULT_COMMAND =  "find * -path '*/\.*' -prune -o -path
+"             \ 'node_modules/**' -prune -o -path 'target/**' -prune -o -path
+"             \ 'dist/**' -prune -o  -type f -print -o -type l -print
+"             \ 2> /dev/null"
 
 " The Silver Searcher
 if executable('ag')
   let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
   set grepprg=ag\ --nogroup\ --nocolor
-  command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings --ignore-case --hidden --follow --glob "!.git/*" --color "always" '.shellescape(<q-args>).'| tr -d "\017"', 1, <bang>0)
+  command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number
+              \ --no-heading --fixed-strings --ignore-case --hidden --follow
+              \ --glob "!.git/*" --color "always" '.shellescape(<q-args>).'|
+              \ tr -d "\017"', 1, <bang>0)
 endif
 
 " ripgrep
 " if executable('rg')
-  " let $FZF_DEFAULT_COMMAND = 'rg --files --no-messages --hidden --follow --glob "!.git/*"'
-  " set grepprg=rg\ --vimgrep
-  " command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings --ignore-case --hidden --follow --glob "!.git/*" --color "always" '.shellescape(<q-args>).'| tr -d "\017"', 1, <bang>0)
+"   let $FZF_DEFAULT_COMMAND = 'rg --files --no-messages --hidden
+"               \ --follow --glob "!.git/*"'
+"   set grepprg=rg\ --vimgrep
+"   command! -bang -nargs=* Find call fzf#vim#grep('rg --column --line-number
+"               \ --no-heading --fixed-strings --ignore-case --hidden --follow
+"               \ --glob "!.git/*" --color "always" '.shellescape(<q-args>).'|
+"               \ tr -d "\017"', 1, <bang>0)
 " endif
 
 "" Tabularize for haskell

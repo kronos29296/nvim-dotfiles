@@ -20,12 +20,12 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'tomasr/molokai'
 Plug 'altercation/vim-colors-solarized'
 Plug 'iCyMind/NeoSolarized'
+Plug 'chriskempson/base16-vim'
 
 " Plug 'vim-scripts/CSApprox'
 " Plug 'altercation/vim-colors-solarized'
 " Plug 'w0ng/vim-hybrid'
 " Plug 'rakr/vim-one'
-" Plug 'chriskempson/base16-vim'
 " Plug 'frankier/neovim-colors-solarized-truecolor-only'
 
 "" File management
@@ -48,6 +48,7 @@ Plug 'junegunn/fzf', {'do': './install --bin' }
 "" Formatting, Indent and eye-candy
 "" ================================
 Plug 'tpope/vim-commentary'
+Plug 'scrooloose/nerdcommenter'
 Plug 'godlygeek/tabular', { 'for' : 'haskell'}
   " Prettify Haskell
 Plug 'Yggdroot/indentLine'
