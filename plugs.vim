@@ -30,8 +30,8 @@ Plug 'chriskempson/base16-vim'
 
 "" File management
 "" ===============
-  " call dein#add('scrooloose/nerdtree', { 'on_cmd': ['NERDTreeFind','NERDTreeToggle']})
-  " call dein#add('jistr/vim-nerdtree-tabs')
+" Plug 'scrooloose/nerdtree'
+" Plug 'jistr/vim-nerdtree-tabs'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'Raimondi/delimitMate'
@@ -67,9 +67,9 @@ Plug 'Shougo/vimproc.vim', {'do': 'make'}
 "" =================================
 
 Plug 'w0rp/ale'
+Plug 'wlangstroth/vim-racket'
 " Plug 'Valloric/YouCompleteMe'
 " Plug 'xu-cheng/brew.vim'
-" Plug 'wlangstroth/vim-racket'
 
 "" For Deoplete
 "" ============
