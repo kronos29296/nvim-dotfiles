@@ -190,8 +190,10 @@ let g:ale_lint_on_text_changed = 'never'
 let g:ale_lint_on_enter = 0
 let g:ale_linters = {
           \'python': ['flake8','pylint'],
-          \'haskell':['ghc-mod','hlint']
-          \}
+          \'haskell': ['ghc-mod','hlint'],
+          \'vim': ['vint'],
+          \'r': ['lintr'],
+          \'text': ['proselint','vale']}
 let g:ale_set_loclist = 0
 let g:ale_set_quickfix = 1
 let g:ale_linter_aliases = {'pandoc': 'markdown'}
