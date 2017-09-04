@@ -1,9 +1,6 @@
 
-"" Be iMproved
-"" ===========
-if &compatible
-  set nocompatible
-endif
+"" Be iMproved with neovim
+"" =======================
 
 call plug#begin('$HOME/.config/nvim/plugs')
 
@@ -78,9 +75,8 @@ Plug 'zchee/deoplete-jedi', { 'for' : 'python'}
 Plug 'zchee/deoplete-zsh', { 'for' : 'zsh'}
 Plug 'Shougo/neoinclude.vim'
 Plug 'Shougo/echodoc.vim'
-" Plug 'Shougo/denite.nvim'
-
 Plug 'zchee/deoplete-clang', { 'for' : ['c','cpp']}
+" Plug 'Shougo/denite.nvim'
 
 "" Snippets
 "" ========
