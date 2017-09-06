@@ -24,8 +24,8 @@ autocmd CompleteDone * if pumvisible() == 0 | pclose | endif
 call deoplete#custom#set('ultisnips', 'matchers', ['matcher_fuzzy'])
 
 " Clang deoplete options
-let g:deoplete#sources#clang#libclang_path="/usr/lib/llvm-4.0/lib/libclang.so"
-let g:deoplete#sources#clang#clang_header="/usr/lib/llvm-4.0/lib/clang/4.0.0/include"
+let g:deoplete#sources#clang#libclang_path="/usr/lib/libclang.so"
+let g:deoplete#sources#clang#clang_header="/usr/lib/clang/"
 
 " Deoplete for Lua - xolox plugin
 " let g:lua_check_syntax = 0

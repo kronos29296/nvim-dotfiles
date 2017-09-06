@@ -31,16 +31,23 @@ augroup END
 
 
 " c
-autocmd FileType c setlocal tabstop=4 shiftwidth=4 expandtab
-autocmd FileType cpp setlocal tabstop=4 shiftwidth=4 expandtab
+augroup cpp-settings
+  autocmd FileType c setlocal tabstop=4 shiftwidth=4 expandtab
+  autocmd FileType cpp setlocal tabstop=4 shiftwidth=4 expandtab
+  autocmd FileType cpp filetype indent on
+augroup END
 
 " python
 " vim-python
 augroup vimrc-python
   autocmd!
   autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=8 colorcolumn=79
-      \ formatoptions+=croq softtabstop=4
-      \ cinwords=if,elif,else,for,while,try,except,finally,def,class,with
+        \ formatoptions+=croq softtabstop=4
+        \ cinwords=if,elif,else,for,while,try,except,finally,def,class,with
+augroup END
+
+augroup vimrc-vim
+  autocmd FileType vim setlocal shiftwidth=2
 augroup END
 
 " haskell
