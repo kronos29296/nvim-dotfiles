@@ -44,15 +44,15 @@ Plug 'junegunn/fzf', {'do': './install --bin' }
 
 "" Formatting, Indent and eye-candy
 "" ================================
-Plug 'tpope/vim-commentary'
+" Plug 'tpope/vim-commentary'
 Plug 'scrooloose/nerdcommenter'
-Plug 'godlygeek/tabular', { 'for' : 'haskell'}
-  " Prettify Haskell
 Plug 'Yggdroot/indentLine'
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat' " dot repeat for plugin actions
 " Plug 'vim-scripts/indentpython.vim'
+" Prettify Haskell
+Plug 'godlygeek/tabular', { 'for' : 'haskell'}
 
 "" Vim-Session
 "" ===========
@@ -76,6 +76,7 @@ Plug 'zchee/deoplete-zsh', { 'for' : 'zsh'}
 Plug 'Shougo/neoinclude.vim'
 Plug 'Shougo/echodoc.vim'
 Plug 'zchee/deoplete-clang', { 'for' : ['c','cpp']}
+Plug 'landaire/deoplete-d'
 " Plug 'Shougo/denite.nvim'
 
 "" Snippets
@@ -108,6 +109,10 @@ Plug 'eagletmt/neco-ghc', { 'for' : 'haskell'}
 "" R
 "" =
 Plug 'jalvesaq/Nvim-R', { 'for' : 'r'}
+
+"" D
+"" =
+Plug 'idanarye/vim-dutyl', { 'for' : 'd'}
 
 "*****************************************************************************
 
