@@ -15,3 +15,4 @@ source $HOME/.config/nvim/file_type.vim
 "" ================
 
 command NF :set nofoldenable
+nmap <leader>fq mygggqG`y
