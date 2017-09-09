@@ -60,7 +60,7 @@ else
   set shell=/bin/sh
 endif
 if has("win32") || has("win64")
-  set shell=powershell
+  set shell=cmd
 endif
 
 

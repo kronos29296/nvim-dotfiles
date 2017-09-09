@@ -3,7 +3,7 @@
 "" =======================
 
 if has("win32") || has("win64")
-  call plug#begin('$HOME\AppData\Local\nvim\plugs')
+  call plug#begin('$HOME\vimfiles\plugs')
 else
   call plug#begin('$HOME/.config/nvim/plugs')
 endif
@@ -17,11 +17,11 @@ endif
 "" ==================
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'tomasr/molokai'
-Plug 'altercation/vim-colors-solarized'
-Plug 'iCyMind/NeoSolarized'
 Plug 'chriskempson/base16-vim'
 
+" Plug 'tomasr/molokai'
+" Plug 'altercation/vim-colors-solarized'
+" Plug 'iCyMind/NeoSolarized'
 " Plug 'vim-scripts/CSApprox'
 " Plug 'altercation/vim-colors-solarized'
 " Plug 'w0ng/vim-hybrid'
@@ -41,8 +41,12 @@ Plug 'mbbill/undotree'
 
 "" Search
 "" ======
-Plug 'junegunn/fzf.vim', { 'depends': 'fzf'}
-Plug 'junegunn/fzf', {'do': './install --bin' }
+if has("unix")
+  Plug 'junegunn/fzf.vim', { 'depends': 'fzf'}
+  Plug 'junegunn/fzf', {'do': './install --bin' }
+else
+  Plug 'C:\ProgramData\chocolatey\lib\fzf\tools\fzf.exe' | Plug 'junegunn/fzf.vim'
+endif
 " Plug 'vim-scripts/grep.vim'
 
 "" Formatting, Indent and eye-candy
@@ -54,14 +58,16 @@ Plug 'bronson/vim-trailing-whitespace'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat' " dot repeat for plugin actions
 " Plug 'vim-scripts/indentpython.vim'
-" Prettify Haskell
-Plug 'godlygeek/tabular', { 'for' : 'haskell'}
 
 "" Vim-Session
 "" ===========
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-session'
-Plug 'Shougo/vimproc.vim', {'do': 'make'}
+if has('unix')
+  Plug 'Shougo/vimproc.vim', {'do': 'make'}
+elseif has('win32')
+  Plug 'Shougo/vimproc.vim', {'do': 'mingw32-make'}
+endif
 
 "" Autocomplete and syntax highlight
 "" =================================
@@ -75,11 +81,13 @@ Plug 'wlangstroth/vim-racket'
 "" ============
 Plug 'Shougo/deoplete.nvim'
 Plug 'zchee/deoplete-jedi', { 'for' : 'python'}
-Plug 'zchee/deoplete-zsh', { 'for' : 'zsh'}
 Plug 'Shougo/neoinclude.vim'
 Plug 'Shougo/echodoc.vim'
-Plug 'zchee/deoplete-clang', { 'for' : ['c','cpp']}
-Plug 'landaire/deoplete-d', { 'for' : 'd'}
+if has('unix')
+  Plug 'zchee/deoplete-zsh', { 'for' : 'zsh'}
+  Plug 'zchee/deoplete-clang', { 'for' : ['c','cpp']}
+  Plug 'landaire/deoplete-d', { 'for' : 'd'}
+endif
 " Plug 'Shougo/denite.nvim'
 
 "" Snippets
@@ -91,10 +99,12 @@ Plug 'honza/vim-snippets'
 
 "" Markdown, Pandoc, Latex
 "" ===========================
-Plug 'vim-pandoc/vim-pandoc'
-Plug 'vim-pandoc/vim-pandoc-syntax'
-Plug 'dhruvasagar/vim-table-mode', { 'for' : ['pandoc', 'markdown']}
-Plug 'lervag/vimtex', { 'for' : 'latex'}
+if has('unix')
+  Plug 'vim-pandoc/vim-pandoc'
+  Plug 'vim-pandoc/vim-pandoc-syntax'
+  Plug 'dhruvasagar/vim-table-mode', { 'for' : ['pandoc', 'markdown']}
+  Plug 'lervag/vimtex', { 'for' : 'latex'}
+endif
 
 "" Python
 "" ======
@@ -107,6 +117,7 @@ Plug 'dag/vim2hs', { 'for' : 'haskell'}
 Plug 'pbrisbin/vim-syntax-shakespeare', { 'for' : 'haskell'}
 Plug 'alx741/vim-hindent', { 'for' : 'haskell'}
 Plug 'eagletmt/neco-ghc', { 'for' : 'haskell'}
+Plug 'godlygeek/tabular', { 'for' : 'haskell'} " Prettify Haskell
 " Plug 'eagletmt/ghcmod-vim', { 'for' : 'haskell'}
 
 "" R
