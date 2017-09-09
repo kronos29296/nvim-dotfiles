@@ -14,6 +14,7 @@ set fileencoding=utf-8
 set fileencodings=utf-8
 set bomb
 set binary
+set fileformat=unix
 
 "" Fix backspace indent
 set backspace=indent,eol,start
@@ -34,7 +35,11 @@ set hidden
 
 "" Enable persistent undo
 set undofile
-set undodir=$HOME/.config/nvim/undo
+if has("win32") || has("win64")
+  set undodir=$HOME\AppData\Local\nvim\undo
+else
+  set undodir=$HOME/.config/nvim/undo
+endif
 
 "" Searching
 set hlsearch
@@ -50,9 +55,12 @@ set fileformats=unix,dos,mac
 set showcmd
 
 if exists('$SHELL')
-    set shell=$SHELL
+  set shell=$SHELL
 else
-    set shell=/bin/sh
+  set shell=/bin/sh
+endif
+if has("win32") || has("win64")
+  set shell=powershell
 endif
 
 
@@ -74,7 +82,11 @@ set mousemodel=popup
 set guioptions=egmrti " Gui window options
 " set gfn=Monospace\ 10
 set colorcolumn=79
-set gfn="Inconsolata"\ 11
+if has("win32") || has("win64")
+  set gfn="Consolas"\ 11
+else
+  set gfn="Inconsolata"\ 11
+endif
 
 set termguicolors
 set background=dark " or light

@@ -2,8 +2,11 @@
 "" Be iMproved with neovim
 "" =======================
 
-call plug#begin('$HOME/.config/nvim/plugs')
-
+if has("win32") || has("win64")
+  call plug#begin('$HOME\AppData\Local\nvim\plugs')
+else
+  call plug#begin('$HOME/.config/nvim/plugs')
+endif
 "" ==================
 "" Plugins start here
 "" ==================
@@ -76,7 +79,7 @@ Plug 'zchee/deoplete-zsh', { 'for' : 'zsh'}
 Plug 'Shougo/neoinclude.vim'
 Plug 'Shougo/echodoc.vim'
 Plug 'zchee/deoplete-clang', { 'for' : ['c','cpp']}
-Plug 'landaire/deoplete-d'
+Plug 'landaire/deoplete-d', { 'for' : 'd'}
 " Plug 'Shougo/denite.nvim'
 
 "" Snippets

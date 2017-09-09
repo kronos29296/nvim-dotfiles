@@ -24,8 +24,10 @@ autocmd CompleteDone * if pumvisible() == 0 | pclose | endif
 call deoplete#custom#set('ultisnips', 'matchers', ['matcher_fuzzy'])
 
 " Clang deoplete options
-let g:deoplete#sources#clang#libclang_path="/usr/lib/libclang.so"
-let g:deoplete#sources#clang#clang_header="/usr/lib/clang/"
+if has("unix")
+  let g:deoplete#sources#clang#libclang_path="/usr/lib/libclang.so"
+  let g:deoplete#sources#clang#clang_header="/usr/lib/clang/"
+endif
 
 " Deoplete for Lua - xolox plugin
 " let g:lua_check_syntax = 0
@@ -34,7 +36,7 @@ let g:deoplete#sources#clang#clang_header="/usr/lib/clang/"
 " let g:lua_define_completion_mappings = 0
 
 " let g:deoplete#omni#functions = {'lua' : 'xolox#lua#omnifunc' }
-let g:deoplete#omni#functions = { 'lua' : 'xolox#lua#completefunc' }
+" let g:deoplete#omni#functions = { 'lua' : 'xolox#lua#completefunc' }
 
 "" vim-pandoc fold
 let g:pandoc#folding#level=1
@@ -74,7 +76,12 @@ let g:indentLine_faster = 1
 
 "" session management
 "" ==================
-let g:session_directory = "~/.config/nvim/session"
+if has("win32") || has("win64")
+  " let g:session_directory="$HOME\nvim\session"
+else
+  let g:session_directory="$HOME/.config/nvim/session"
+endif
+
 let g:session_autoload = "no"
 let g:session_autosave = "no"
 let g:session_command_aliases = 1
