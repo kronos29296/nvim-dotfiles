@@ -76,10 +76,8 @@ let g:indentLine_faster = 1
 
 "" session management
 "" ==================
-if has("win32") || has("win64")
-  " let g:session_directory="$HOME\nvim\session"
-else
-  let g:session_directory="$HOME/.config/nvim/session"
+if has("unix")
+  let g:session_directory='~/.nvim/session'
 endif
 
 let g:session_autoload = "no"

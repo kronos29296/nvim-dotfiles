@@ -38,7 +38,7 @@ set undofile
 if has("win32") || has("win64")
   set undodir=$HOME\AppData\Local\nvim\undo
 else
-  set undodir=$HOME/.config/nvim/undo
+  set undodir=$HOME/.nvim/undo
 endif
 
 "" Searching

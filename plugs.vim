@@ -5,7 +5,7 @@
 if has("win32") || has("win64")
   call plug#begin('$HOME\vimfiles\plugs')
 else
-  call plug#begin('$HOME/.config/nvim/plugs')
+  call plug#begin('$HOME/.nvim/plugs')
 endif
 "" ==================
 "" Plugins start here
