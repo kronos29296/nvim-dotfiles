@@ -32,7 +32,9 @@ augroup END
 
 " c
 augroup cpp-settings
-  autocmd FileType c setlocal tabstop=4 shiftwidth=4 expandtab
+  " autocmd FileType c setlocal tabstop=4 shiftwidth=4 expandtab formatprg=clang-format
+  autocmd FileType c setlocal tabstop=4 shiftwidth=4
+        \ expandtab formatprg=astyle\ -A1
   autocmd FileType cpp setlocal tabstop=4 shiftwidth=4 expandtab
   autocmd FileType cpp filetype indent on
 augroup END
