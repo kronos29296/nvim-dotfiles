@@ -101,7 +101,7 @@ Plug 'honza/vim-snippets'
 "" ===========================
 if has('unix')
   Plug 'vim-pandoc/vim-pandoc'
-  Plug 'vim-pandoc/vim-pandoc-syntax'
+  Plug 'vim-pandoc/vim-pandoc-syntax', {'for': ['pandoc','markdown']}
   Plug 'dhruvasagar/vim-table-mode', { 'for' : ['pandoc', 'markdown']}
   Plug 'lervag/vimtex', { 'for' : 'latex'}
 endif
