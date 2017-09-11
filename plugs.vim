@@ -21,7 +21,7 @@ Plug 'chriskempson/base16-vim'
 
 " Plug 'tomasr/molokai'
 " Plug 'altercation/vim-colors-solarized'
-" Plug 'iCyMind/NeoSolarized'
+Plug 'iCyMind/NeoSolarized'
 " Plug 'vim-scripts/CSApprox'
 " Plug 'altercation/vim-colors-solarized'
 " Plug 'w0ng/vim-hybrid'

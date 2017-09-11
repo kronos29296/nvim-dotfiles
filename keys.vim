@@ -141,6 +141,7 @@ noremap <leader>zc :Commands<Enter>
 noremap <leader>zl :Locate<Space>
 noremap <leader>zt :Tags<Space>
 noremap <leader>za :AirlineTheme<Space>
+noremap <leader>zb :Buffers<Enter>
 
 "" Prettify Haskell using tabularize
 vmap a= :Tabularize /=<CR>
