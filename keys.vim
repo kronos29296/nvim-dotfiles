@@ -3,6 +3,11 @@
 "" Key bindings for Neovim
 "" =======================
 
+" Save shortcut Ctrl
+nmap <C-s> :w<CR>
+
+noremap <C-i> <C-i>
+
 " Nerd commenter use tpope commentary keys
 nmap gcc <leader>cc
 nmap gcu <leader>cu
@@ -73,8 +78,8 @@ nnoremap <leader>sd :DeleteSession<CR>
 nnoremap <leader>sc :CloseSession<CR>
 
 "" Tabs
-nnoremap <Tab> gt
-nnoremap <S-Tab> gT
+" nnoremap <Tab> gt
+" nnoremap <S-Tab> gT
 nnoremap <silent> <S-t> :tabnew<CR>
 
 "" Buffer nav
