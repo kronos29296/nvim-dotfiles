@@ -36,7 +36,7 @@ set hidden
 "" Enable persistent undo
 set undofile
 if has("win32") || has("win64")
-  set undodir=$HOME\AppData\Local\nvim\undo
+  set undodir=$HOME\vimfiles\undo
 else
   set undodir=$HOME/.nvim/undo
 endif
