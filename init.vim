@@ -3,7 +3,7 @@
 
 " Python path elsewhere cuz I use Anaconda
 if has("unix")
-  let g:python3_host_prog = "/usr/bin/python"
+  let g:python3_host_prog = "/usr/bin/python3"
 else
   let g:python3_host_prog = C:/tools/Anaconda3/python.exe
 endif
