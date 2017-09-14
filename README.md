@@ -20,3 +20,11 @@ On Windows it requires (They should be present in path):
  - python-neovim (pip install neovim)
  - Add the neovim directory to path for clipboart support.
  (Neovim detects win32yank in its directory only when added to path)
+
+External tools used:
+ - Vint for vim
+ - lintr for R
+ - pylint, flake8, autopep8
+ - proselint, vale
+ - ghc-mod, hlint, hindent
+ - astyle for C,C++
