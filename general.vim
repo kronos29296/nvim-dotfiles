@@ -30,6 +30,9 @@ set smartindent
 "" Map leader to ,
 let mapleader=','
 
+"" Set lazyredraw
+set lz
+
 "" Enable hidden buffers
 set hidden
 

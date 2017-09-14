@@ -9,9 +9,9 @@ nmap <C-s> :w<CR>
 noremap <C-i> <C-i>
 
 " Nerd commenter use tpope commentary keys
-nmap gcc <leader>cc
+nmap gcc <leader>c<Space>
 nmap gcu <leader>cu
-vmap gcc <leader>cc
+vmap gcc <leader>c<Space>
 vmap gcu <leader>cu
 
 " Search mappings: These will make it so that going to the next one in a

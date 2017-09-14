@@ -4,8 +4,9 @@
 "" ===============
 
 "" Color theme
-colorscheme base16-3024
-let g:airline_theme = 'base16_3024'
+" colorscheme base16-3024,solarized dark,onedark
+colorscheme base16-onedark
+let g:airline_theme = 'onedark'
 
 "" Deoplete
 "" ========
