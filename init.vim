@@ -27,5 +27,5 @@ endif
 "" ================
 
 command NF :set nofoldenable
-nmap <leader>fq mygggqG`y
+nmap <leader>gq mygggqG`y
 command! PU PlugUpdate | PlugUpgrade

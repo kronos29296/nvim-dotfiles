@@ -15,6 +15,7 @@ endif
 
 "" Airline and themes
 "" ==================
+Plug 'Shougo/denite.nvim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'chriskempson/base16-vim'
@@ -88,14 +89,11 @@ if has('unix')
   Plug 'zchee/deoplete-clang', { 'for' : ['c','cpp']}
   Plug 'landaire/deoplete-d', { 'for' : 'd'}
 endif
-" Plug 'Shougo/denite.nvim'
 
 "" Snippets
 "" ========
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
-
-" Plug 'ludwig/split-manpage.vim'
 
 "" Markdown, Pandoc, Latex
 "" ===========================
@@ -109,7 +107,6 @@ endif
 "" Python
 "" ======
 Plug 'Vimjas/vim-python-pep8-indent'
-" Plug 'hylang/vim-hy'
 
 "" Haskell
 "" =======
@@ -127,6 +124,11 @@ Plug 'jalvesaq/Nvim-R', { 'for' : 'r'}
 "" D
 "" =
 Plug 'idanarye/vim-dutyl', { 'for' : 'd'}
+
+"" Unix utils
+"" ==========
+Plug 'alx741/vinfo'
+
 
 "*****************************************************************************
 
