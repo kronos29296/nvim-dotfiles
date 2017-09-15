@@ -2,14 +2,14 @@
 "" Do not set the settings here
 
 " Python path elsewhere cuz I use Anaconda
-if has("unix")
-  let g:python3_host_prog = "/usr/bin/python3"
+if has('unix')
+  let g:python3_host_prog = '/usr/bin/python3'
 else
   let g:python3_host_prog = $SystemDrive/tools/Anaconda3/python.exe
 endif
 
 " source $HOME/.config/nvim/plugins.vim " No more dein
-if has("win32")
+if has('win32')
   source $HOME\AppData\Local\nvim\plugs.vim
   source $HOME\AppData\Local\nvim\general.vim
   source $HOME\AppData\Local\nvim\keys.vim

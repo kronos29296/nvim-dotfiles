@@ -15,7 +15,6 @@ endif
 
 "" Airline and themes
 "" ==================
-Plug 'Shougo/denite.nvim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'chriskempson/base16-vim'
