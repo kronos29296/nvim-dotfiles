@@ -39,6 +39,10 @@ endif
 " let g:deoplete#omni#functions = {'lua' : 'xolox#lua#omnifunc' }
 " let g:deoplete#omni#functions = { 'lua' : 'xolox#lua#completefunc' }
 
+"" Vim-dutyl for dlang
+"" ===================
+" let g:dutyl_stdImportPaths=['/usr/include/dlang/dmd']
+
 "" vim-pandoc fold
 let g:pandoc#folding#level=1
 let g:pandoc#filetypes#handled = ["pandoc", "markdown"]

@@ -6,8 +6,8 @@
 if !exists('*s:setupWrapping')
   function s:setupWrapping()
     set wrap
-    set wm=2
-    set textwidth=79
+    set wrapmargin=2
+    set textwidth=80
   endfunction
 endif
 
@@ -81,4 +81,6 @@ augroup END
 "" For Dlang
 augroup dlang
   autocmd FileType d set efm=%*[^@]@%f\(%l\):\ %m,%f\(%l\\,%c\):\ %m,%f\(%l\):\ %m
+  autocmd FileType d set formatprg=dfmt\ --max_line_length\ 80\ 
+        \--brace_style\ allman
 augroup END

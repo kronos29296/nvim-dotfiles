@@ -18,10 +18,10 @@ endif
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'chriskempson/base16-vim'
+Plug 'iCyMind/NeoSolarized'
 
 " Plug 'tomasr/molokai'
 " Plug 'altercation/vim-colors-solarized'
-Plug 'iCyMind/NeoSolarized'
 " Plug 'vim-scripts/CSApprox'
 " Plug 'altercation/vim-colors-solarized'
 " Plug 'w0ng/vim-hybrid'
@@ -73,7 +73,7 @@ endif
 "" =================================
 
 Plug 'w0rp/ale'
-Plug 'wlangstroth/vim-racket'
+Plug 'wlangstroth/vim-racket', {'for': 'racket'}
 " Plug 'Valloric/YouCompleteMe'
 " Plug 'xu-cheng/brew.vim'
 
@@ -122,7 +122,7 @@ Plug 'jalvesaq/Nvim-R', { 'for' : 'r'}
 
 "" D
 "" =
-Plug 'idanarye/vim-dutyl', { 'for' : 'd'}
+" Plug 'idanarye/vim-dutyl', { 'for' : 'd'}
 
 "" Unix utils
 "" ==========
