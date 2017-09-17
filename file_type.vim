@@ -55,7 +55,7 @@ augroup END
 " haskell
 augroup haskell-lang
   autocmd!
-  autocmd FileType haskell setlocal expandtab shiftwidth=2 colorcolumn=79
+  autocmd FileType haskell setlocal expandtab shiftwidth=2
       \ nofoldenable softtabstop=2
 augroup END
 " autocmd Filetype haskell set formatprg=brittany
@@ -81,6 +81,8 @@ augroup END
 "" For Dlang
 augroup dlang
   autocmd FileType d set efm=%*[^@]@%f\(%l\):\ %m,%f\(%l\\,%c\):\ %m,%f\(%l\):\ %m
-  autocmd FileType d set formatprg=dfmt\ --max_line_length\ 80\ 
-        \--brace_style\ allman
+  " autocmd Filetype d set colorcolumn=79
+  autocmd Filetype d set softtabstop=2 shiftwidth=2
+  autocmd FileType d set formatprg=dfmt\ 
+        \--brace_style\ allman\ 2>\ /dev/null
 augroup END
