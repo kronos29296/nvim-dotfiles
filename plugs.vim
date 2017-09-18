@@ -19,20 +19,20 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'chriskempson/base16-vim'
 Plug 'iCyMind/NeoSolarized'
+Plug 'tomasr/molokai'
+Plug 'rakr/vim-one'
 
-" Plug 'tomasr/molokai'
 " Plug 'altercation/vim-colors-solarized'
 " Plug 'vim-scripts/CSApprox'
 " Plug 'altercation/vim-colors-solarized'
 " Plug 'w0ng/vim-hybrid'
-" Plug 'rakr/vim-one'
 " Plug 'frankier/neovim-colors-solarized-truecolor-only'
 
 "" File management
 "" ===============
 " Plug 'scrooloose/nerdtree'
 " Plug 'jistr/vim-nerdtree-tabs'
-Plug 'tpope/vim-fugitive'
+" Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'Raimondi/delimitMate'
 Plug 'majutsushi/tagbar'

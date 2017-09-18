@@ -3,6 +3,10 @@
 "" Key bindings for Neovim
 "" =======================
 
+" Recent files
+" superseded by FZF shortcut
+" nnoremap <leader>o :browse oldfiles<CR>
+
 " Save shortcut Ctrl
 nmap <C-s> :w<CR>
 
@@ -61,14 +65,16 @@ noremap <Leader>h :<C-u>split<CR>
 noremap <Leader>v :<C-u>vsplit<CR>
 
 "" Git
-noremap <Leader>ga :Gwrite<CR>
-noremap <Leader>gc :Gcommit<CR>
-noremap <Leader>gsh :Gpush<CR>
-noremap <Leader>gll :Gpull<CR>
-noremap <Leader>gs :Gstatus<CR>
-noremap <Leader>gb :Gblame<CR>
-noremap <Leader>gd :Gvdiff<CR>
-noremap <Leader>gr :Gremove<CR>
+"" Open current line on GitHub
+" nnoremap <Leader>o :.Gbrowse<CR>
+" noremap <Leader>ga :Gwrite<CR>
+" noremap <Leader>gc :Gcommit<CR>
+" noremap <Leader>gsh :Gpush<CR>
+" noremap <Leader>gll :Gpull<CR>
+" noremap <Leader>gs :Gstatus<CR>
+" noremap <Leader>gb :Gblame<CR>
+" noremap <Leader>gd :Gvdiff<CR>
+" noremap <Leader>gr :Gremove<CR>
 
 "" session management
 "" ==================
@@ -128,25 +134,25 @@ vmap > >gv
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 
-"" Open current line on GitHub
-nnoremap <Leader>o :.Gbrowse<CR>
 
 "" FZF shortcuts
 cnoremap <C-P> <C-R>=expand("%:p:h") . "/" <CR>
 nnoremap <silent> <leader>b :Buffers<CR>
 nnoremap <silent> <leader>e :FZF -m<CR>
-nnoremap <c-p> :FZF<cr>
+nnoremap <silent> <C-p> :FZF -m<CR>
 
+nnoremap <leader>o :History<CR>
 noremap <leader>zz :FZF<Space>
 noremap <leader>zw :Windows<Enter>
 noremap <leader>zh :History
 noremap <leader>zo :Colors<Enter>
 noremap <leader>zs :Snippets<Enter>
 noremap <leader>zc :Commands<Enter>
-noremap <leader>zl :Locate<Space>
-noremap <leader>zt :Tags<Space>
-noremap <leader>za :AirlineTheme<Space>
+" noremap <leader>zl :Locate<Space>
+" noremap <leader>zt :Tags<Space>
 noremap <leader>zb :Buffers<Enter>
+
+noremap <leader>za :AirlineTheme<Space>
 
 "" Prettify Haskell using tabularize
 vmap a= :Tabularize /=<CR>

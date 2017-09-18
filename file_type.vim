@@ -36,7 +36,6 @@ augroup cpp-settings
   autocmd FileType c setlocal tabstop=4 shiftwidth=4
         \ expandtab formatprg=astyle\ -A1\ -p\ -xg\ -f\ -H\ -d
   autocmd FileType cpp setlocal tabstop=4 shiftwidth=4 expandtab
-  autocmd FileType cpp filetype indent on
 augroup END
 
 " python
@@ -83,6 +82,6 @@ augroup dlang
   autocmd FileType d set efm=%*[^@]@%f\(%l\):\ %m,%f\(%l\\,%c\):\ %m,%f\(%l\):\ %m
   " autocmd Filetype d set colorcolumn=79
   autocmd Filetype d set softtabstop=2 shiftwidth=2
-  autocmd FileType d set formatprg=dfmt\ 
+  autocmd FileType d set formatprg=dfmt\
         \--brace_style\ allman\ 2>\ /dev/null
 augroup END

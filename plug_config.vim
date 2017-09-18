@@ -5,7 +5,8 @@
 
 "" Color theme
 " colorscheme base16-3024,solarized dark,onedark
-colorscheme base16-onedark
+" colorscheme base16-onedark
+colorscheme molokai
 let g:airline_theme = 'onedark'
 
 "" Deoplete

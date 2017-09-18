@@ -25,10 +25,9 @@ set softtabstop=0
 set shiftwidth=4
 set expandtab
 set smarttab
-set smartindent
 
 "" Map leader to ,
-let mapleader=','
+let g:mapleader=','
 
 "" Set lazyredraw
 set lz
