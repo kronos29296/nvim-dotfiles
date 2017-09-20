@@ -231,12 +231,13 @@ let g:tagbar_type_haskell = {
 
 "" Ale linter
 "" ==========
+" \'haskell': ['ghc-mod','hlint'],
 
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_lint_on_enter = 0
 let g:ale_linters = {
           \'python': ['flake8','pylint'],
-          \'haskell': ['ghc-mod','hlint'],
+          \'haskell': ['ghc-mod'],
           \'vim': ['vint'],
           \'r': ['lintr'],
           \'text': ['proselint','vale']}
