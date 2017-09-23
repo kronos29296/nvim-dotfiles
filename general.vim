@@ -85,7 +85,7 @@ set guioptions=egmrti " Gui window options
 " set gfn=Monospace\ 10
 set colorcolumn=79
 if has('win32') || has('win64')
-  set gfn="Consolas"\ 11
+  set gfn="Source Code Pro"\ 11
 else
   set gfn="Inconsolata"\ 11
 endif
