@@ -5,7 +5,7 @@
 if has('unix')
   let g:python3_host_prog = '/usr/bin/python3'
 else
-  let g:python3_host_prog = $SystemDrive/tools/Anaconda3/python.exe
+  let g:python3_host_prog = '$SystemDrive/tools/Anaconda3/python.exe'
 endif
 
 " source $HOME/.config/nvim/plugins.vim " No more dein
