@@ -23,7 +23,8 @@ endif
 autocmd CompleteDone * if pumvisible() == 0 | pclose | endif
 
 " snippets from ultisnips
-call deoplete#custom#set('ultisnips', 'matchers', ['matcher_fuzzy'])
+" call deoplete#custom#set('ultisnips', 'matchers', ['matcher_fuzzy'])
+call deoplete#custom#source('ultisnips', 'matchers', ['matcher_fuzzy'])
 
 " Clang deoplete options
 if has("unix")
